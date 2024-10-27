@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Real Madrid C.B </title>
+        <meta name="description" content="Pagina oficial de club de Basket Real Madrid">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <p><img src="images/escudo.png" height="120px" width="120px">Real Madrid CB<img src="images/escudo.png" height="120px" width="120px"></p>
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="ruta.html">Visita la ciudad</a>
+            <a href="tour.html">Tour</a>
+            <a href="form.html">Pide tu tour</a>
+        </nav>
+
+        <aside>
+
+            <h2> Enlaces de interés </h2>
+            <br>
+            <li><a href="https://www.metromadrid.es/es">Metro de Madrid</a></li>
+            <li><a href="https://www.emtmadrid.es/Home">Autobús de Madrid</a></li>
+            <li><a href="https://policia.es/_es/index.php">Policía</a></li>
+            <li><a href="https://www.madrid.es/">Página oficial de Madrid</a></li>
+            <li><a href="https://www.realmadrid.com/sobre-el-real-madrid/el-club/ciudad-real-madrid">Ciudad deportiva Real Madrid</a></li>
+            <br><br><br><br>
+            <p>Localización del estadio:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3213519913384!2d-3.674326123553411!3d40.423882655203336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228a559a82bfd%3A0x824fe75010a905e3!2sWiZink%20Center!5e0!3m2!1ses!2ses!4v1700954076273!5m2!1ses!2ses" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </aside>
+        <article>
+            <h1>Visita guiada</h1>
+
+            <div class="formulario">
+                <h2>Reserva tu visita guiada rellenando el formulario siguiente:</h2>
+                <!-- La idea es que todo me lo mande junto a este correo, pero sin crear php abre app para enviar -->
+                <form action="mailto:almagrojj90.it@gmail.com" method="POST" enctype="text/plain" name="EmailForm">
+                    <label>Nombre:</label><input type="text" id="nombre" name="nombre" placeholder="Juan" required autofocus>  
+                    <label>Apellidos:</label> <input type="text" id="apellidos" name="apellidos" placeholder="Perez Ramírez"> 
+                    <br><br>
+                    <label>DNI / NIF:</label><input type="text" id="nif" name="nif" maxlength="9" size="9" pattern="[0-9]{8}[A-Za-z]{1}" title="Invalid input" placeholder="11122233S">
+                    <br><br>
+                    <label>Fecha de visita: </label><input type="date" id="fecha" name="fecha" required>
+                    <br><br>
+                    <label>Interesado/a en los siguientes horarios: </label>
+                        <label for=horario1>8:00-10:30</label><input type="checkbox" id="horario1" name="horario1">
+                        <label for=horario2>11:00-13:30</label><input type="checkbox" id="horario2" name="horario2">
+                        <label for=horario3>16:00-17:30</label><input type="checkbox" id="horario3" name="horario3">
+                        <label for=horario4>18:00-20:30</label><input type="checkbox" id="horario4" name="horario4">
+                    <br><br>
+                    <label>Régimen: </label> <select id="regimen" name="regimen">
+                        <option value="solo_visita">Visita</option>
+                        <option value="visita_comida">Visita + Comida</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Send" onclick="alert('¡Formulario enviado!')">
+                </form>
+            </div>
+
+        </article>
+
+        <footer>
+            <p>Copyright 2023. Juan José Almagro Cabrera. 1º DAW SP. LMGSI.</p>
+        </footer>
+    </body>
+</html>

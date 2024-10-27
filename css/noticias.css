@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Helvetica;
+    src: url();
+}
+
+#noticia{
+    padding: 20px 30px 20px 20px;
+    flex: 0 0 50px;
+    display: inline-flex;
+    position: center;
+    width: 600px;
+    
+}
+#noticia p{
+    text-align: justify;
+}
